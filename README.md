@@ -46,25 +46,24 @@ In other words, COGNOS does not replace your anomaly detection backbone. It upgr
 
 ## Supported Backbones
 
-- `Autoformer`
-- `CrossAD`
-- `DLinear`
-- `KANAD`
-- `LSTMAE`
-- `MICN`
-- `ModernTCN`
-- `TimeMixer++`
-- `TimesNet`
+- `Autoformer`: "Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting" [NeurIPS 2021]
+- `CrossAD`: "CrossAD: Time Series Anomaly Detection with Cross-scale Associations and Cross-window Modeling" [NeurIPS 2025]
+- `DLinear`: "Are Transformers Effective for Time Series Forecasting?" [AAAI 2023]
+- `KANAD`: "KAN-AD: Time Series Anomaly Detection with Kolmogorov–Arnold Networks" [ICML 2025]
+- `LSTMAE`: "Outlier Detection for Multidimensional Time Series Using Deep Neural Networks"
+- `MICN`: "MICN: Multi-scale local and global context modeling for long-term series forecasting" [ICLR 2023]
+- `ModernTCN`: "ModernTCN: A Modern Pure Convolution Structure for General Time Series Analysis" [ICLR 2024]
+- `TimeMixer++`: "TimeMixer++: A General Time Series Pattern Machine for Universal Predictive Analysis" [ICLR 2025]
+- `TimesNet`: "TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis" [ICLR 2023]
 
 ## Benchmarks
 
-- `GECCO`
-- `MSL`
-- `PSM`
-- `SMAP`
-- `SWAN`
-- `SWaT`
-- `UCR`
+- `GECCO`: "GECCO Industrial Challenge 2018 Dataset: A water quality dataset for the 'Internet of Things: Online Anomaly Detection for Drinking Water Quality' competition"
+- `MSL`, `SMAP`: "Detecting Spacecraft Anomalies Using LSTMs and Nonparametric Dynamic Thresholding"
+- `PSM`: "Practical Approach to Asynchronous Multivariate Time Series Anomaly Detection and Localization"
+- `SWAN`: "Multivariate time series dataset for space weather data analytics"
+- `SWaT`: "SWaT: A water treatment testbed for research and training on ICS security"
+- `UCR`: "Current Time Series Anomaly Detection Benchmarks are Flawed and are Creating the Illusion of Progress"
 
 ## Main Results
 
@@ -135,16 +134,9 @@ Typical run tags:
 
 Reported metrics include:
 
-- `Precision`
-- `Recall`
-- `F-score`
-- `Aff_precision`
-- `Aff_recall`
-- `Aff_F_score`
-- `AUC_ROC`
-- `AUC_PR`
-- `R_AUC_ROC`
-- `R_AUC_PR`
+- `Precision`, `Recall`, `Std-F-score`: "Unsupervised Anomaly Detection via Variational Auto-Encoder for Seasonal KPIs in Web Applications" [WWW 2018]
+- `Aff-precision`, `Aff-recall`, `Aff-F-score`: "Local Evaluation of Time Series Anomaly Detection Algorithms" [KDD 2022]
+- `AUC-ROC`, `AUC-PR`, `R-AUC-ROC`, `R-AUC-PR`: "Volume under the surface: a new accuracy evaluation measure for time-series anomaly detection" [VLDB 2022]
 
 ## Citation
 
