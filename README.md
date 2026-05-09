@@ -30,7 +30,7 @@ Most reconstruction-based TSAD pipelines use Mean Squared Error (MSE) both for t
 COGNOS improves this pipeline by explicitly engineering the residuals to better match the statistical assumptions required by reliable downstream scoring and smoothing.
 
 <p align="center">
-  <img src="./assets/figures/intro.png" alt="Motivation: reconstruction residuals can be noisy, correlated, and non-Gaussian." width="60%">
+  <img src="./assets/figures/intro.png" alt="Motivation: reconstruction residuals can be noisy, correlated, and non-Gaussian." width="50%">
 </p>
 
 ## Core Idea
