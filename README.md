@@ -4,11 +4,13 @@
 [![Python](https://img.shields.io/badge/Python-3.10-blue)](./requirements.txt)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1.0-ee4c2c)](./requirements.txt)
 
-COGNOS is a model-agnostic enhancement framework for reconstruction-based time series anomaly detection. It was accepted at **ICML 2026** and is designed to improve existing backbones by aligning reconstruction residuals with a more statistically sound anomaly-scoring pipeline.
+COGNOS is a model-agnostic enhancement framework for reconstruction-based time series anomaly detection. It is designed to improve existing backbones by aligning reconstruction residuals with a more statistically sound anomaly-scoring pipeline.
 
-This repository contains the research code and the LaTeX source for the paper:
+This repository contains the research code for the paper:
 
-**COGNOS: Universal Enhancement for Time Series Anomaly Detection via Constrained Gaussian-Noise Optimization and Smoothing**
+<p align="center">
+  <img src="./assets/figures/info.png"  width="100%">
+</p>
 
 ## Highlights
 
@@ -27,7 +29,9 @@ Most reconstruction-based TSAD pipelines use Mean Squared Error (MSE) both for t
 
 COGNOS improves this pipeline by explicitly engineering the residuals to better match the statistical assumptions required by reliable downstream scoring and smoothing.
 
-![Motivation: reconstruction residuals can be noisy, correlated, and non-Gaussian.](./assets/figures/intro.png)
+<p align="center">
+  <img src="./assets/figures/intro.png" alt="Motivation: reconstruction residuals can be noisy, correlated, and non-Gaussian." width="60%">
+</p>
 
 ## Core Idea
 
@@ -73,8 +77,6 @@ COGNOS improves the average **Affiliation-F1** over vanilla training on every re
 COGNOS produces cleaner residual statistics and more stable anomaly scores, helping suppress noisy fluctuations in normal regions while preserving true anomaly responses.
 
 ![Residual analysis and Anomaly score comparison before and after COGNOS.](./assets/figures/anomaly-scores.png)
-
-
 
 ## Repository Structure
 
@@ -170,3 +172,9 @@ This library is constructed based on the following repos:
 - TODS: <https://github.com/datamllab/tods>
 
 - Affiliation metrics: <https://github.com/ahstat/affiliation-metrics-py>
+
+## License
+
+This project is released under the MIT License.
+
+Copyright (c) 2026 Giansha
